@@ -1,0 +1,20 @@
+## 과제
+```
+var btn = document.getElementById('btn');
+btn.addEventListener('click',function(){
+  var number = document.getElementById('number').value;
+  if (!number) { 
+      console.log('숫자를 입력해주세요');
+      return;
+  }
+  console.log(number);
+});
+```
+- 코드해석
+```
+if (!number) {...}
+```
+> 조건에 값만 들어있는 경우는 값이 있으면 true 값이 없으면 false가 됨 즉, number(자료)가 있으면(true)의 부정이므로 값이 없을경우 실행 됨
+- `return : retrun을 만나면 다음코드를 실행하지 않음`
+- 결과
+> 값을 입력하고 버튼을 누르면 콘솔에 값이 찍히고, 아무것도 입력하지 않으면 콘솔에 '숫자를 입력해주세요'가 뜸
