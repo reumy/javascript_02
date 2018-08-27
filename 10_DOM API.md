@@ -76,7 +76,7 @@ console.log(doc.getElementsByClassName('color'));
 ```
 - 결과
 
-<br />![01](img/01.png)
+![01](img/01.png)
 > 배열과 비슷한 방식인 Node List로 출력됨 그래서 원하는 대상을 호출할때 배열처럼 호출함
 ```
 var color = doc.getElementsByClassName('color');
@@ -125,7 +125,7 @@ console.log(nemoGroup);
 ```
 - 결과
 
-<br />![02](img/02.png)
+![02](img/02.png)
 > Node List
 ```
 nemo.addEventListener('click',function(){
@@ -174,7 +174,7 @@ console.log(list);
 ```
 - 결과
 
-<br />![03](img/03.png)<br />
+![03](img/03.png)<br />
 
 - getElementsByTagName
 ```
@@ -183,7 +183,7 @@ console.log(ptag);
 ```
 - 결과
 
-<br />![04](img/04.png)<br />
+![04](img/04.png)<br />
 
 #### jquery 와 비교
 - javascript
