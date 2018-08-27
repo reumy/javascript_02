@@ -341,3 +341,4 @@ box.addEventListener('click',function(){
 ```
 $('.box').animate({ left : 100 });
 ```
+- 결론적으로 jquery가 생산성이 더 빠름
