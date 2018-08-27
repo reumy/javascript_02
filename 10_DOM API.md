@@ -342,3 +342,13 @@ box.addEventListener('click',function(){
 $('.box').animate({ left : 100 });
 ```
 - 결론적으로 jquery가 생산성이 더 빠름
+
+
+#### script 위치 문제 해결
+- 문서가 로딩 된 후에 실행되므로 script의 위치가 상관없게하는 코드
+```
+window.onload = function(){ ~ };
+```
+```
+document.addEventListener('DOMContentLoaded',function(){ ~ });
+```
