@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>도형이동</title>
+</head>
+<body>
+
+<style>
+	#border {margin:20px; width:600px; height:500px; border:5px solid #000; overflow:hidden;}
+	#box {width:50px; height:50px; background:green; position:relative; top:225px; left:20px;}
+	#btn {margin-left:90px}
+	#btn button {width:70px; height:30px;}
+	#btn button:disabled, button[disabled] {color: #000;}
+</style>
+
+<div id="border">
+	<div id="box"></div>
+</div>
+
+<div id='btn'>
+	<button id="up">위</button>
+	<button id="down">아래</button>
+	<button id="left">왼쪽</button>
+	<button id="right">오른쪽</button>
+	<button id="stop">정지</button>
+	<button id="back">원위치</button>
+</div>
+
+<script src="js/03.js"></script>
+
+</body>
+</html>
