@@ -1,0 +1,9 @@
+* {margin:0; padding:0; list-style:none;}
+.view {width:700px; height:466px; margin:50px auto 10px; border:5px solid #000; overflow:hidden;}
+#img {width:3500px; height:466px; position:relative;}
+#img li {float:left;}
+#circle {text-align:center;}
+#circle div {width:14px; height:14px; margin-bottom:20px; border-radius:50%; background:#999; display:inline-block;}
+#circle div.active {background:red;}
+.button {text-align:center;}
+.button button {padding:10px 20px;}
