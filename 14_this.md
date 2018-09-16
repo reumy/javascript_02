@@ -43,21 +43,20 @@ p();  // {name: "one", say: f}, a
 > man을 바인딩(붙여주기)해주면 다시 man을 가르킴
 ```
 <button id="btn">버튼</button>
-```
-```
+
 var doc = document;
 var s = man.say;
 
-doc.getElementById('btn').addEventListener('click',s);
-// <button id="btn">버튼</button>, a
+doc.getElementById('btn').addEventListener('click',s);  // <button id="btn">버튼</button>, a
 ```
 > 같은 s 지만 호출되는 시점에서 달라져 this는 dom 객체인 태그를 가르킴
 ```
-doc.getElementById('btn').addEventListener('click',p);
-// {name: "one", say: f}, a
+doc.getElementById('btn').addEventListener('click',p);  // {name: "one", say: f}, a
 ```
 > 바인딩 시켜줬기때문에 this는 man을 가르킴
 ```
+<button id="btn2">버튼2</button>
+
 var btn2 = doc.getElementById('btn2');
 
 var obj = {
@@ -162,6 +161,8 @@ f1();
 ```
 - 호출 시점
 ```
+<button id="btn3">버튼3</button>
+
 var btn3 = doc.getElementById('btn3');
 
 btn3.addEventListener('click',f1);
