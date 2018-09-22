@@ -26,7 +26,7 @@ img { vertical-align:top; }
     animation-name:slider;
     animation-duration:20s;
     animation-timing-function:linear; /* ease
-    animation-iteration-count:infinite; /* ë¬´í•œë°˜ë³µ
+    animation-iteration-count:infinite;
 }
 
 @keyframes slider {
