@@ -4,11 +4,11 @@ class TV {
 	  this.inch = '50';
 	  this.model = 'UHD50';
 
-		this.getCompany = function(){
+		this.getCompany = () => {
 			console.log(_company);
 		}
 
-		this.setCompany = function(company){
+		this.setCompany = (company) => {
 	    _company = company
 	  }
 	}
