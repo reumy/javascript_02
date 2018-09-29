@@ -10,6 +10,7 @@ $.ajax({  // HTTP 통신
 ```
 > 성공하면 data를 가지고와서 콘솔에 찍음
 - 결과
+
 ![09](img/09.png)<br />
 ### append
 - 붙여주는 개념
@@ -27,6 +28,7 @@ $.ajax({
 });
 ```
 - 결과
+
 ![10](img/10.png)<br />
 ### text
 - 내용을 바꾸는 개념
@@ -51,6 +53,7 @@ success : function(data){
 }
 ```
 - 결과
+
 ![11](img/11.png)<br />
 ```
 success : function(data){
@@ -64,6 +67,7 @@ success : function(data){
 ```
 > $('<div>') 꺽쇠가 들어가면 태그로 만들어준다는 의미가 됨
 - 결과
+  
 ![12](img/12.png)<br />
 ```
 success : function(data){
@@ -89,8 +93,8 @@ $.ajax({
 ```
 > 포트를 틀리게 설정하면 에러가 실행됨
 - 결과
-![13](img/13.png)<br />
 
+![13](img/13.png)<br />
 ## JSON
 - key와 value의 모음
 - 객체와 배열이 합쳐져 있음
