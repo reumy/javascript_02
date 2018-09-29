@@ -101,7 +101,7 @@
 > 해당 id에 대한 상세정보 조회
 
 ![08](img/08.png)
-> dev-jolse.iptime.org:8080/company/1 즉, id가 1인 정보를 조회
+> id가 1인 정보를 조회 (dev-jolse.iptime.org:8080/company/1)
 
 ## 그 외
 - 슬래시( / ) 뒤에 들어가는 것이 rest
