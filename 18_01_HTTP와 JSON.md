@@ -92,15 +92,15 @@
 - dev-jolse.iptime.org:8080/company
 > 회사정보를 줘라 (전체조회)
 
-![06](06.png)<br />
+![06](img/06.png)<br />
 - 웹스토어에서 JSON 뷰어 다운
 > JSON(key, value)형태로 볼 수 있음
 
-![07](07.png)<br />
+![07](img/07.png)<br />
 - dev-jolse.iptime.org:8080/company/id
 > 해당 id에 대한 상세정보 조회
 
-![08](08.png)<br />
+![08](img/08.png)<br />
 
 ## 그 외
 - 슬래시( / ) 뒤에 들어가는 것이 rest
