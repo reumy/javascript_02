@@ -150,7 +150,7 @@ fetch('http://dev-jolse.iptime.org:8080/company')
 ```
 - 결과
 
-![12](img/12.png)<br />
+![18](img/18.png)<br />
 ```
 company.map(value => {
   if (value.favorite > 0) {} else {}
