@@ -68,7 +68,7 @@ success : function(data){
 > $('<div>') 꺽쇠가 들어가면 태그로 만들어준다는 의미가 됨
 - 결과
   
-![12](img/12.png)<br />
+![18](img/18.png)<br />
 ```
 success : function(data){
   var company = data.company;  // 배열
