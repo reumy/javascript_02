@@ -114,3 +114,97 @@ var xhr = new XMLHttpRequest();
 console.log(xhr);  // XMLHttpRequest {...}
 ```
 > 사용하기 위해 new를 사용해 객체로 리턴해줌
+```
+xhr.open('GET','http://dev-jolse.iptime.org:8080/company',true);
+```
+> 정보 입력
+```
+xhr.send();
+```
+> 정보 보내기
+```
+xhr.onreadystatechange = function(){
+  console.log('a');  // a(3)
+}
+```
+> 통신(보낼때, 통신됐을때, 왔을때)을 할때마다 함수를 실행 그래서 3번 실행됨
+```
+xhr.onreadystatechange = function(){
+  console.log(xhr.readyState);  // 2, 3, 4
+}
+```
+> 2 : 대기, 3 : 로딩, 4 : 성공(완성) ...
+```
+xhr.onreadystatechange = function(){
+  console.log(xhr.status);  // 200(3)
+}
+```
+> http 통신 응답(상태)코드<br />200 : 통신성공, 400 : 클라이언트 오류, 500 : 서버오류 ...
+```
+xhr.onreadystatechange = function(){
+  console.log(xhr.response);
+}
+```
+- 결과
+
+![15](img/15.png)
+> 대기(2)상태이므로 보내는중이어서 데이터 안옴
+```
+xhr.onreadystatechange = function(){
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    console.log(xhr.response);
+  }
+}
+```
+> 준비상태가 성공(4)이고, 통신상태가 성공(200)일 경우에만 실행 즉, 정확하고 reponse 될 시점에만 넘어옴<br />jquery에서 success 부분과 같은 기능
+- 결과
+
+![16](img/16.png)
+> 텍스트라서 JSON 형태(key와 value)가 아님
+```
+xhr.onreadystatechange = function(){
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    var data = JSON.parse(xhr.response);
+    console.log(data);
+  }
+}
+```
+> JSON으로 parsing 해줌
+- 결과
+
+
+![09](img/09.png)
+
+### 속도체크
+```
+$.ajax({
+  type : 'GET',
+  url : 'http://dev-jolse.iptime.org:8080/company',
+  success : function(data){
+    console.log(data);
+  },
+  error : function(err){
+    console.log(err);
+  }
+});
+```
+```
+xhr.onreadystatechange = function(){
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    var data = JSON.parse(xhr.response);
+    console.log(data);
+  }
+}
+```
+```
+setTimeout(function(){
+  console.log('a');
+},10);
+```
+> {count: 13, company: Array(13)}, {count: 13, company: Array(13)}, a
+```
+setTimeout(function(){
+  console.log('a');
+},1);
+```
+> a, {count: 13, company: Array(13)}, {count: 13, company: Array(13)}
